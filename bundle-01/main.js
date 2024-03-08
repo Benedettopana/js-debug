@@ -100,13 +100,13 @@ displayEvenNumbers(); // dovrebbe restituire [2,4,6,8]
     2- Sono presenti errori di sintassi? si, i due array vanno dichiarati in const non in let, il punto e virgola dopo l'incremento del contatore nel ciclo for.
     nella condizione numbers va controllato con l'indice, nella condizione vanno due uguali non uno, non è un assegnazione.
     dopo l'if c'è un punto e virgola di troppo, nel push va messo numbers[i], non i e basta.
-    3- Sono presenti errori logici? si, il return va messo fuori dal for non dentro.
+    3- Sono presenti errori logici? si, il return va messo fuori dal for non dentro. nella condizione non va il -1
 
     Inserisci i tuoi commenti con le risposte, sotto ciascun esercizio
     function displayEvenNumbers() {
     const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
     const evenNumbers = [];
-    for (let i = 0; i < numbers.length - 1; i++) {
+    for (let i = 0; i < numbers.length; i++) {
         if (numbers[i] % 2 == 0) {
             evenNumbers.push(numbers[i]);
         }

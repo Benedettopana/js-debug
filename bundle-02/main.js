@@ -23,6 +23,17 @@ function checkAge() {
 }
 checkAge();
 
+/*******************************************************************************
+​
+    Per questo esercizio, rispondi a queste domande:
+    1- Che cosa fa questo codice? Controlla se la tua età è maggiore di 18 e stampa un messaggio
+    2- Sono presenti errori di sintassi? si message va dichiarato in let dato che successivamente va modificato
+    3- Sono presenti errori logici?
+​
+    Inserisci i tuoi commenti con le risposte alla fine dell'esercizio
+​
+*******************************************************************************/
+
 // ESERCIZIO 2
 function printColorsNumber() {
     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
