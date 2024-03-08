@@ -78,13 +78,13 @@ addNumbers();
 ​
     Per questo esercizio, rispondi a queste domande:
     1- Che cosa fa questo codice? dovrebbe dare la somma di tutti i numeri
-    2- Sono presenti errori di sintassi?
-    3- Sono presenti errori logici? si va scritto total += userNumber
+    2- Sono presenti errori di sintassi? manca il parseint nel prompt
+    3- Sono presenti errori logici? 
 ​
     Inserisci i tuoi commenti con le risposte alla fine dell'esercizio
 ​   function addNumbers() {
-    const userNumber = prompt('Inserisci un numero');
-    const total += userNumber;
+    const userNumber = parseInt( prompt('Inserisci un numero'));
+    const total = userNumber + 12;
 
     console.log(`Il risultato finale è ${total}`);
     }
