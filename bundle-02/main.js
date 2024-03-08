@@ -77,12 +77,18 @@ addNumbers();
 /*******************************************************************************
 ​
     Per questo esercizio, rispondi a queste domande:
-    1- Che cosa fa questo codice?
+    1- Che cosa fa questo codice? dovrebbe dare la somma di tutti i numeri
     2- Sono presenti errori di sintassi?
-    3- Sono presenti errori logici?
+    3- Sono presenti errori logici? si va scritto total += userNumber
 ​
     Inserisci i tuoi commenti con le risposte alla fine dell'esercizio
-​
+​   function addNumbers() {
+    const userNumber = prompt('Inserisci un numero');
+    const total += userNumber;
+
+    console.log(`Il risultato finale è ${total}`);
+    }
+    addNumbers();
 *******************************************************************************/
 
 
@@ -105,6 +111,33 @@ function checkAccess() {
     }
 }
 checkAccess();
+/*******************************************************************************
+​
+    Per questo esercizio, rispondi a queste domande:
+    1- Che cosa fa questo codice? stampa in console se l'email inserita dall'utente è presente nell'elenco
+    2- Sono presenti errori di sintassi?
+    3- Sono presenti errori logici? si, a riga 107 mettere il triplo uguale è sbagliato dato che la variabile è già un booleano e andra sul true se è stata messa in vero.
+​
+    Inserisci i tuoi commenti con le risposte alla fine dell'esercizio
+​
+    function checkAccess() {
+    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+    const userEmail = prompt('Inserisci il tuo indirizzo email');
+
+    let grantAccess = 'false';
+
+    if (addresses.includes(userEmail)) {
+        grantAccess = 'true';
+    }
+
+    if (grantAccess) {
+        console.log('Accesso consentito!');
+    } else {
+        console.log('Accesso negato!');
+    }
+    }
+    checkAccess();
+*******************************************************************************/
 
 
 // ESERCIZIO 5 (suggerimento: c'è un solo errore)
@@ -134,6 +167,45 @@ function checkAccessImproved() {
         }
     }
     checkAccessImproved();
+
+    /*******************************************************************************
+​
+    Per questo esercizio, rispondi a queste domande:
+    1- Che cosa fa questo codice? controlla se l'email è presente in addresses
+    2- Sono presenti errori di sintassi? si manca una parentesi graffa alla fine
+    3- Sono presenti errori logici?
+​
+    Inserisci i tuoi commenti con le risposte alla fine dell'esercizio
+​function checkAccessImproved() {
+    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+
+    const userEmail = prompt('Inserisci il tuo indirizzo email');
+
+    let grantAccess = 'false';
+
+    for (let i = 0; i < addresses.length; i++) {
+        const email = addresses[i];
+
+        if (userEmail.length > 5) {
+
+            if (email === userEmail) {
+                grantAccess = 'true';
+
+            }
+
+        }
+
+        if (grantAccess) {
+            console.log('Accesso consentito!');
+        } else {
+            console.log('Accesso negato!');
+        }
+    }
+}
+    checkAccessImproved();
+
+*******************************************************************************/
+
 
 
 
