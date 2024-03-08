@@ -31,7 +31,17 @@ checkAge();
     3- Sono presenti errori logici?
 ​
     Inserisci i tuoi commenti con le risposte alla fine dell'esercizio
-​
+​   function checkAge() {
+    const myAge = 32;
+    let message = '';
+
+    if (myAge < 18) {
+        message = `Sei troppo giovane! Hai ${myAge} anni!`;
+    } else {
+        message = 'Hai più di 18 anni!';
+    }
+}
+checkAge()
 *******************************************************************************/
 
 // ESERCIZIO 2
@@ -40,6 +50,20 @@ function printColorsNumber() {
     console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
 }
 printColorsNumber();
+/*******************************************************************************
+​
+    Per questo esercizio, rispondi a queste domande:
+    1- Che cosa fa questo codice? stampa il numero di elementi presenti nell'array
+    2- Sono presenti errori di sintassi? si lenght si scrive 'LENGTH'
+    3- Sono presenti errori logici?
+​
+    Inserisci i tuoi commenti con le risposte alla fine dell'esercizio
+​   function printColorsNumber() {
+    const colors = ['blue', 'red', 'yellow', 'green', 'black'];
+    console.log(`Nella mia palette ci sono ${colors.length} colori!`);
+    }
+    printColorsNumber();
+*******************************************************************************/
 
 
 // ESERCIZIO 3
@@ -50,6 +74,17 @@ function addNumbers() {
     console.log(`Il risultato finale è ${total}`);
 }
 addNumbers();
+/*******************************************************************************
+​
+    Per questo esercizio, rispondi a queste domande:
+    1- Che cosa fa questo codice?
+    2- Sono presenti errori di sintassi?
+    3- Sono presenti errori logici?
+​
+    Inserisci i tuoi commenti con le risposte alla fine dell'esercizio
+​
+*******************************************************************************/
+
 
 
 // ESERCIZIO 4
